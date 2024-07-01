@@ -6,6 +6,7 @@ import IncioSesion from './Componentes/InicioSesion.jsx'
 import Registrarse from './Componentes/Registrarse.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import {
     createBrowserRouter,
     RouterProvider,
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path:"/Home",
+    path:"/home",
     element:<Home/>
   }
 

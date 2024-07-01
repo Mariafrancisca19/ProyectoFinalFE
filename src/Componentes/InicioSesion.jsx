@@ -1,10 +1,12 @@
 import { useEffect,useRef,useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { mostrarAlerta } from "../JS/Alerta";
 
+// metodo get
 const IncioSesion = ({ text }) => {
   const correoR = useRef ('')
   const claveR = useRef('')
-  const[ datos, setDatos] = useState("")
+  const[ datos, setDatos] = useState([])
   const navigate = useNavigate()
 
   // // funcion para validar que no ingresen espacios vacios
@@ -33,15 +35,33 @@ const IncioSesion = ({ text }) => {
         console.log(error)
       }
     }
-    obtenerDatos()
+      obtenerDatos()
+    console.log(datos);
   }, [])
+
+  
+  const validando =()=>{
+    console.log(datos);
+    let usuario = datos.find((user)=>user.email===correoR.current.value && user.clave===claveR.current.value)
+    console.log(usuario)
+    if (usuario) {
+      return true
+    }else return false
+  }
 
   return (
     <div className="inicio">
       <h1>Welcome</h1>
       <input placeholder="Correo Electrronico" type="correo" ref={correoR}/>
       <input placeholder="Contrasena" type="password" ref={claveR}/>
-      <button>INICIAR</button>
+      <button onClick={()=>{
+        if(validando()){
+          navigate('/home')
+          //MANDA A OTRA PAGINA
+        }else{
+          mostrarAlerta("error", "LLENE TODOS LOS CAMPOS")
+        }
+      }}>INICIAR</button>
       <a  onClick={()=>{navigate("/Registrarse")}}>NO TENGO CUENTA</a>
       <a  onClick={()=>{navigate("/Home")}}>Home</a>
     </div>

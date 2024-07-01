@@ -4,6 +4,7 @@ import { Await, Link } from "react-router-dom"
 
 
 // constante
+    // metodo post
 
 async function guardarDatos(obj) {
     try {
@@ -37,7 +38,7 @@ const Registrarse = ({ }) => {
 
         // funcion para validar que no ingresen espacios vacios
         if (nombre.trim() ==="" || correo.trim()==="" || clave.trim()==="") {
-        alert ("por favor ingresar texto")
+        alert ("Por favor ingresar texto ")
         }
 
         await guardarDatos({
