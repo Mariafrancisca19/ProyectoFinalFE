@@ -11,6 +11,9 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"
+import VenderProducto from './Componentes/VenderProduc.jsx'
+import Destacados from './Componentes/Destacados.jsx'
+import SobreNosotros from './Componentes/SobreNosotros.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,21 @@ const router = createBrowserRouter([
   {
     path:"/home",
     element:<Home/>
+  },
+
+  {
+    path:"/venderProductos",
+    element:<VenderProducto/>
+  },
+
+  {
+    path:"/destacado",
+    element:<Destacados/>
+  },
+
+  {
+    path:"/sobreNosotros",
+    element:<SobreNosotros/>
   }
 
 ]);

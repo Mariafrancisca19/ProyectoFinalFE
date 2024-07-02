@@ -2,9 +2,14 @@
 const obtenerProductos= async () => {
   
       try {
-        const respuesta = await fetch("http://localhost:3001/productos")
+        const respuesta = await fetch("http://localhost:3001/productos",{
+          method: "GET",
+          headers: {
+              "Content-type": "application; charset=UTF-8"
+          },
+        })
         const data = await respuesta.json()
-        
+        return data
         console.log(`los datos son${datos}`)
       } catch (error) {
         console.log(error)

@@ -5,12 +5,13 @@ import { guardarProductos } from './MetodosProductos'
 import { Navigate } from 'react-router-dom'
 import { mostrarAlerta } from '../JS/Alerta'
 
+// VALIDACION
 const Formulario = () => {
     const [nombre, setNombre] = useState('')
     const [precio, setPrecio] = useState('')
     const [material, setMaterial] = useState('')
     const [descripcion, setDescripcion] = useState('')
-
+// LLAMADO DEL METODO POST
     const postProducto = async () => {
 
         if (nombre.trim() === "" || descripcion.trim() === "" || precio.trim() === "" || material.trim() === "") {
@@ -34,6 +35,7 @@ const Formulario = () => {
             <form>
                 <div>
                     <label>PULSERA</label>
+                
                 </div>
                 <input type='text' onChange={(e) => { setNombre(e.target.value) }} />
                 <div>
@@ -51,6 +53,7 @@ const Formulario = () => {
                 <div>
                     <label>Pais</label>
                     <select>
+                        <option value="es">Espanol</option>
                         <option value="in">Ingles</option>
                         <option value="fr">Francia</option>
                         <option value="ch">Chino</option>
