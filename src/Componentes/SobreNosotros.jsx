@@ -3,7 +3,8 @@ import React from 'react'
 const SobreNosotros = () => {
   return (
     <div>
-      <p>hollaaa</p>
+    <h1>QUIENES SOMOS </h1>
+
     </div>
   )
 }
