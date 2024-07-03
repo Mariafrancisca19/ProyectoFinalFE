@@ -3,7 +3,7 @@ import MenuNav from './MenuNav';
 import { mostrarAlerta } from '../JS/Alerta';
 import { obtenerProductos } from './MetodosProductos';
 import { useEffect, useState } from 'react';
-import Carousel1 from './Carousel1';
+
 const Home  = ({}) => {
   const [data, setData] = useState([])
 

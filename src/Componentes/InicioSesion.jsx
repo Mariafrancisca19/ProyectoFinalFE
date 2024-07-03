@@ -1,6 +1,8 @@
 import { useEffect,useRef,useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { mostrarAlerta } from "../JS/Alerta";
+import { AuthContext } from '../Rutas/AuthProvider'
+import { useContext } from 'react'
 
 // metodo get
 const IncioSesion = ({ text }) => {
@@ -8,7 +10,7 @@ const IncioSesion = ({ text }) => {
   const claveR = useRef('')
   const[ datos, setDatos] = useState([])
   const navigate = useNavigate()
-
+  const {login} = useContext(AuthContext) ;
   // // funcion para validar que no ingresen espacios vacios
   // const espacioVacio = ()=>{
   //   if (!correoR.current.value && !claveR.current.value) {
@@ -56,6 +58,7 @@ const IncioSesion = ({ text }) => {
       <input placeholder="Contrasena" type="password" ref={claveR}/>
       <button onClick={()=>{
         if(validando()){
+          login()
           navigate('/home')
           // mostrarAlerta("exito", "te has registradocon exito")
           //MANDA A OTRA PAGINA

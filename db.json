@@ -16,6 +16,12 @@
       "usuario": "asdf",
       "email": "asdf",
       "clave": "asdf"
+    },
+    {
+      "id": "66a8",
+      "usuario": "francisca",
+      "email": "maria@gmail.com",
+      "clave": "12345"
     }
   ],
   "productos": [

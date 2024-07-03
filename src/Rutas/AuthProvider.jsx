@@ -3,7 +3,8 @@ import { createContext, useState } from "react";
 
 const AuthContext = createContext ();
 
-const AuthProvider = ({childen}) => {
+const AuthProvider = ({children}) => {
+  console.log(children)
     const [auth,setAuth]=useState(false)
     const login = ()=> setAuth(true)
     const logout = ()=> setAuth(false)
@@ -11,7 +12,7 @@ const AuthProvider = ({childen}) => {
   return (
     <div>
       <AuthContext.Provider value={{auth,login,logout}}>
-        {childen}
+        {children}
       </AuthContext.Provider>
 
 
