@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 import { Await, Link } from "react-router-dom"
-
+import { mostrarAlerta } from "../JS/Alerta"
 
 
 // constante
@@ -38,7 +38,7 @@ const Registrarse = ({ }) => {
 
         // funcion para validar que no ingresen espacios vacios
         if (nombre.trim() ==="" || correo.trim()==="" || clave.trim()==="") {
-        alert ("Por favor ingresar texto ")
+            mostrarAlerta("error", "LLENE TODOS LOS CAMPOS")
         }
 
         await guardarDatos({

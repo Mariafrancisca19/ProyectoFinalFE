@@ -3,6 +3,7 @@ import MenuNav from './MenuNav';
 import { mostrarAlerta } from '../JS/Alerta';
 import { obtenerProductos } from './MetodosProductos';
 import { useEffect, useState } from 'react';
+
 const Home  = ({}) => {
   const [data, setData] = useState([])
 
@@ -26,7 +27,7 @@ const Home  = ({}) => {
     <button onClick={()=> productos()}> funcion validar</button> */}
 
     {data.map((dato)=>dato.nombre)}
-      
+    
 
 </>
   );

@@ -57,6 +57,7 @@ const IncioSesion = ({ text }) => {
       <button onClick={()=>{
         if(validando()){
           navigate('/home')
+          // mostrarAlerta("exito", "te has registradocon exito")
           //MANDA A OTRA PAGINA
         }else{
           mostrarAlerta("error", "LLENE TODOS LOS CAMPOS")

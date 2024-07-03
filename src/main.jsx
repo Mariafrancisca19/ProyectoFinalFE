@@ -5,7 +5,7 @@ import Home from './Componentes/Home.jsx'
 import IncioSesion from './Componentes/InicioSesion.jsx'
 import Registrarse from './Componentes/Registrarse.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './Estilos/index.css'
 
 import {
     createBrowserRouter,
@@ -14,6 +14,7 @@ import {
 import VenderProducto from './Componentes/VenderProduc.jsx'
 import Destacados from './Componentes/Destacados.jsx'
 import SobreNosotros from './Componentes/SobreNosotros.jsx'
+import PreguntasFrecuentes from './Componentes/PreguntasFre.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
   {
     path:"/sobreNosotros",
     element:<SobreNosotros/>
+  },
+
+  {
+    path:"/preguntasfrecuentes",
+    element:<PreguntasFrecuentes/>
   }
 
 ]);
