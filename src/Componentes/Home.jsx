@@ -3,7 +3,7 @@ import MenuNav from './MenuNav';
 import { mostrarAlerta } from '../JS/Alerta';
 import { obtenerProductos } from './MetodosProductos';
 import { useEffect, useState } from 'react';
-
+import Carousel1 from './Carousel1';
 const Home  = ({}) => {
   const [data, setData] = useState([])
 
@@ -22,13 +22,9 @@ const Home  = ({}) => {
   return (
     <>
     <MenuNav/>
-    
-    {/* <button onClick={()=>mostrarAlerta("success","LO QUE USTED QUIERA")}>MUESTRA ALERTA</button>
-    <button onClick={()=> productos()}> funcion validar</button> */}
-
+    hola
     {data.map((dato)=>dato.nombre)}
-    
-
+    <Carousel1/>
 </>
   );
 }

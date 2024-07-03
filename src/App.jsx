@@ -1,20 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './Estilos/App.css'
-import IncioSesion from './Componentes/InicioSesion'
-import Registrarse from './Componentes/Registrarse'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Estilos/index.css'
+
+
+import Rutas from './Rutas/Rutas.jsx'
 
 function App() {
-  
+
 
   return (
     <>
-      <IncioSesion/>
-
-
-
+  <Rutas/>
 
 
     </>
