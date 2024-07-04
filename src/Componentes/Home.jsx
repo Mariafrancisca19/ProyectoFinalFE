@@ -1,12 +1,14 @@
 import Formulario from './Formulario';
 import MenuNav from './MenuNav';
 import { mostrarAlerta } from '../JS/Alerta';
-import { obtenerProductos } from './MetodosProductos';
+import { eliminarProductos, obtenerProductos } from './MetodosProductos';
 import { useEffect, useState } from 'react';
+import Carousel1 from './Carousel1';
+import ContenedorCard from './ContenedorCard';
+import Info from './Info';
 
-const Home  = ({}) => {
+const Home  = () => {
   const [data, setData] = useState([])
-
 
   async function productos() {
     const data = await obtenerProductos()
@@ -17,14 +19,17 @@ const Home  = ({}) => {
     useEffect(()=>{
       productos()
     },[])
-
+    async function eliminar(id) {
+      await eliminarProductos(id)
+    }
 
   return (
     <>
     <MenuNav/>
-    hola
-    {data.map((dato)=>dato.nombre)}
+    
     <Carousel1/>
+    <ContenedorCard btnEliminar={eliminar} getPulceras={data}/>
+    <Info/>
 </>
   );
 }

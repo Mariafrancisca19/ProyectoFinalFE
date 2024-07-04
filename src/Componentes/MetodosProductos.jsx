@@ -64,9 +64,12 @@ const cambiarProductos= async (endpoint,id) => {
 const eliminarProductos = async (id) => {
   
     try {
-      fetch(`http://localhost:3001${id}`,{
+      fetch(`http://localhost:3001/productos/${id}`,{
           method:"DELETE",
-  
+          headers:{
+            "Content-Type":"application; charset=UTF-8"
+          },
+      
       })
       
     } catch (error) {

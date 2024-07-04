@@ -22,34 +22,13 @@
       "usuario": "francisca",
       "email": "maria@gmail.com",
       "clave": "12345"
+    },
+    {
+      "id": "35ec",
+      "usuario": "",
+      "email": "",
+      "clave": ""
     }
   ],
-  "productos": [
-    {
-      "nombre": "Pulsera de hilo rojo",
-      "precio": "1000",
-      "id": "daa1"
-    },
-    {
-      "id": "84a6",
-      "nombre": "pulsera negra",
-      "descripcion": "pulsera de piedras",
-      "precio": "20000",
-      "material": "piedras preciosas"
-    },
-    {
-      "id": "a3c6",
-      "nombre": "",
-      "descripcion": "",
-      "precio": "",
-      "material": ""
-    },
-    {
-      "id": "7c17",
-      "nombre": "",
-      "descripcion": "",
-      "precio": "",
-      "material": ""
-    }
-  ]
+  "productos": []
 }

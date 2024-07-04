@@ -4,6 +4,7 @@ import { obtenerProductos } from './MetodosProductos'
 import { guardarProductos } from './MetodosProductos'
 import { Navigate } from 'react-router-dom'
 import { mostrarAlerta } from '../JS/Alerta'
+import MenuNav from './MenuNav'
 
 // VALIDACION
 const Formulario = () => {
@@ -31,6 +32,7 @@ const Formulario = () => {
 
     return (
         <div>
+        <MenuNav/>
             <h1> Articulos</h1>
             <form>
                 <div>

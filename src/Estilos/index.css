@@ -11,3 +11,29 @@
     display: none;
 }
 
+body{
+    background-color:#fff;
+    background-size: cover ;         /*estilo de fondo*/
+background-repeat: no-repeat;
+
+box-shadow: none;
+align-items: center;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body:hover{a:hover{
+    text-shadow: 2px 1px 2px black;
+         
+    
+     }}
+
+h1{
+font-style: oblique;
+color: rgb(155, 176, 246);
+
+}
+
+.card{
+    background-color: aquamarine;
+}

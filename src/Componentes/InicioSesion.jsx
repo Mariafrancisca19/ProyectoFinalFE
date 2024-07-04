@@ -41,14 +41,27 @@ const IncioSesion = ({ text }) => {
     console.log(datos);
   }, [])
 
-  
+   
+
   const validando =()=>{
-    console.log(datos);
-    let usuario = datos.find((user)=>user.email===correoR.current.value && user.clave===claveR.current.value)
-    console.log(usuario)
-    if (usuario) {
-      return true
-    }else return false
+    if (claveR.current.value.trim()!==''||correoR.current.value.trim()!=='') {
+      console.log(claveR,' ',correoR);
+      console.log(datos);
+      let usuario = datos.find((user)=>user.email===correoR.current.value && user.clave===claveR.current.value)
+      console.log(usuario)
+      if (usuario) {
+        return true
+      }else{
+        mostrarAlerta("error", "usuario o contraseña equivocados")
+        return false
+      }
+      
+    } else{
+      
+      mostrarAlerta("error", "usuario o contraseña vacios")
+        return false
+    }
+    
   }
 
   return (
@@ -62,9 +75,9 @@ const IncioSesion = ({ text }) => {
           navigate('/home')
           // mostrarAlerta("exito", "te has registradocon exito")
           //MANDA A OTRA PAGINA
-        }else{
-          mostrarAlerta("error", "LLENE TODOS LOS CAMPOS")
         }
+         
+      
       }}>INICIAR</button>
       <a  onClick={()=>{navigate("/Registrarse")}}>NO TENGO CUENTA</a>
       <a  onClick={()=>{navigate("/Home")}}>Home</a>
