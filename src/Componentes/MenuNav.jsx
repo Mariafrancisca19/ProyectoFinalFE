@@ -24,17 +24,17 @@ const MenuNav  =()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link  onClick={()=>{navigate("/destacado")}}>DESTACADOS</Nav.Link>
+            <Nav.Link  onClick={()=>{navigate("/destacado")}}>ACCESORIO</Nav.Link>
             <Nav.Link onClick={()=>{navigate("/venderProductos")}}>PUBLICAR</Nav.Link>
             <Nav.Link onClick={()=>{navigate("/sobreNosotros")}}>SOBRE NOSOTROS</Nav.Link>
             <NavDropdown title="MENU" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">ACERCA DE </NavDropdown.Item>
+              <NavDropdown.Item href="#action3">VENTAS </NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                ACERCA DE
+                SOBRE NOSOTROS
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Something else here
+                CERRAR SESION
               </NavDropdown.Item>
             </NavDropdown>
             

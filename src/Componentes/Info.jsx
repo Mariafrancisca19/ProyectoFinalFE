@@ -4,10 +4,8 @@ const Info = () => {
   return (
     <div>
       <footer>
-        <h1>INFORMACION</h1>
+        
         <div>
-
-          <p>PREGUNTAS FRCUENTES</p>
 
           <h2>CONTACTANOS</h2>
             {/* correo*/}

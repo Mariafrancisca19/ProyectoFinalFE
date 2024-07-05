@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Carousel1 from './Carousel1';
 import ContenedorCard from './ContenedorCard';
 import Info from './Info';
+import InfoPagina from './InfoPagina';
 
 const Home  = () => {
   const [data, setData] = useState([])
@@ -30,6 +31,7 @@ const Home  = () => {
     <Carousel1/>
     <ContenedorCard btnEliminar={eliminar} getPulceras={data}/>
     <Info/>
+    <InfoPagina/>
 </>
   );
 }

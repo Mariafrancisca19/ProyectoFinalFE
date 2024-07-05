@@ -30,10 +30,21 @@ body:hover{a:hover{
 
 h1{
 font-style: oblique;
-color: rgb(155, 176, 246);
+color: rgb(0, 0, 0);
 
 }
 
 .card{
     background-color: aquamarine;
 }
+
+p{font-size: 20px;
+text-align: center;
+
+
+
+
+}
+
+
+

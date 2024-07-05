@@ -1,31 +1,13 @@
 import React from 'react'
-
+import MenuNav from './MenuNav'
 
 const SobreNosotros = () => {
   return (
     <div>
-      <h1>QUIENES SOMOS? </h1>
-      <p></p>
-
-      <h2>CUALES SON LOS CUIDADOS QUE DEBO TENER CON LOS PRODUCTOS?</h2>
-      <p> 1. No aplicar sobre la pieza lociones, cremas, cosméticos, perfumes y agua.
-        2. Guardar en su empaque por separado
-        3. No llevar durante el ejercicio físico
-        4. Limpia la pieza antes y después de usarla con un paño suave y seco para quitarle los agentes del PH que hacen que se oscurezca más rápido.
-        5. No duermas ni te bañes con los accesorios.</p>
-
-        <span >
-          <p>mostrar</p>
-
-        </span>
-
-        <button >mostrar mas</button>
-
-
-
-
-
-
+       <MenuNav/>
+      <h1>¿Quienes somos Encanto y glamour?</h1>
+      <p>Una empresa Costarricense de emprendedores en dónde cada una de nuestras piezas es un testimonio de nuestra pasión por la creatividad y la belleza por la bisutería.<br/>
+       Reconociendo que la bisutería también puede ser una forma especial de expresar amor y gratitud, hemos ampliado nuestra oferta para incluir regalos únicos y personalizados.</p>
 
 
 
