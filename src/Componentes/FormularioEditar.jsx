@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { cambiarProductos } from './MetodosProductos'
 import { useState } from 'react'
-const FormularioEditar = ({id}) => {
+const FormularioEditar = ({id,recargaPag}) => {
 
   const [nombre, setNombre] = useState('')
   const [precio, setPrecio] = useState('')
   const [material, setMaterial] = useState('')
 
+
   const actualizar = async () => {
     const datos = {
       nombre: nombre,
       precio: precio,
-      meterial: material
     }
     await cambiarProductos("productos", id, datos)
+    recargaPag()
   }
+  
 
   return (
     <div>
