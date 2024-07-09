@@ -28,14 +28,14 @@ const router = createBrowserRouter([
     },
     {
         path: "/home",
-        element: <RutaPrivada route={<Home/>} />
+        element: <Home/>
         // element: <Home/>
 
     },
 
     {
         path: "/venderProductos",
-        element: <VenderProducto/>
+        element: <RutaPrivada route={<VenderProducto/>} />
     },
 
     {
@@ -55,8 +55,6 @@ const router = createBrowserRouter([
 
 ]);
 const Rutas = () => {
-
-    
 
     return (
             <AuthProvider>

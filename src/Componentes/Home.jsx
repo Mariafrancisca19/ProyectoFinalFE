@@ -10,7 +10,6 @@ import InfoPagina from './InfoPagina';
 
 const Home  = () => {
   const [data, setData] = useState([])
-
   async function productos() {
     const data = await obtenerProductos()
     console.log(data)
@@ -20,6 +19,7 @@ const Home  = () => {
     useEffect(()=>{
       productos()
     },[])
+
     async function eliminar(id) {
       await eliminarProductos(id)
       productos()
@@ -30,7 +30,7 @@ const Home  = () => {
     <MenuNav/>
     
     <Carousel1/>
-    <ContenedorCard btnEliminar={eliminar} getPulceras={data}/>
+    <ContenedorCard  btnEliminar={eliminar} getPulceras={data}/>
     <Info/>
     <InfoPagina/>
 </>

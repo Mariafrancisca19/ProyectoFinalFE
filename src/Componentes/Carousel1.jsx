@@ -16,7 +16,7 @@ const Carousel1 =() => {
       </Carousel.Item>
       <Carousel.Item >
         <Link to="/announcements">
-        <Img src={"src/Imagenesp/15.webp"} with="50px"/>
+        <Img src={"src/Imagenes/15.webp"} with="50px"/>
         </Link>
         <Carousel.Caption>
           <h5>PULSERA KIDS</h5>

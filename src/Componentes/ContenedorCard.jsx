@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 
-function ContenedorCard({getPulceras,btnEliminar}) {
+function ContenedorCard({getPulceras,btnEliminar,btnEditar}) {
   return (
     <div>
       {getPulceras.map(pul=>(
@@ -12,7 +12,9 @@ function ContenedorCard({getPulceras,btnEliminar}) {
          precio={pul.precio}
          descripcion={pul.descripcion}
          material={pul.material}
-        btnEliminar={()=>btnEliminar(pul.id)}
+         btnEliminar={()=>btnEliminar(pul.id)}
+         btnEditar={()=> btnEditar(pul.id)}
+
         />
       ))}
     </div>

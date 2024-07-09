@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Card({imagen,nombre,precio,descripcion, material,btnEliminar}) {
+function Card({imagen,nombre,precio,descripcion, material,btnEliminar,btnEditar}) {
+  const[ iniciar,setIniciar] = useState(false)
+  const modificarTexto = () =>{
+    setIniciar(true)
+  }
   return (
     <div>
     <img src={imagen}></img>
@@ -9,6 +13,7 @@ function Card({imagen,nombre,precio,descripcion, material,btnEliminar}) {
       <p>{descripcion}</p>
       <p>{material}</p>
       <button onClick={btnEliminar}>🗑️</button>
+      <button onClick={btnEditar}>EDITAR</button>
     </div>
   )
 }
