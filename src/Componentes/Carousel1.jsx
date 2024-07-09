@@ -10,38 +10,51 @@ const Carousel1 =() => {
         <Img src={"src/Imagenes/perlas_diamante.webp"} with="50px"/>
         </Link>
         <Carousel.Caption>
-          <h5>PULSERA DE DIAMANTE</h5>
-          <p>sdfasfa</p>
+          <h5>PULSERA DE DIAMANTES</h5>
+          <p>₵250 000</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item >
         <Link to="/announcements">
-        <Img src={"src/Imagenesp/ulsera5.webp"} with="50px"/>
+        <Img src={"src/Imagenesp/15.webp"} with="50px"/>
         </Link>
         <Carousel.Caption>
-          <h5>asdf</h5>
-          <p>asdf</p>
+          <h5>PULSERA KIDS</h5>
+          <p>₵3 500</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item >
         <Link to="/announcements">
-        <Img src={"C:\Users\estud\Downloads\pfinal\src\Imagenes\pulsera5.webp"}/>
+        <Img src={"src/Imagenes/conjunto_pulsera.jpg"} with="50px"/>
         </Link>
         <Carousel.Caption>
-          <h5>asdf</h5>
-          <p>asdf</p>
+          <h5>PULSERA DE ORO </h5>
+          <p>₵22 000</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item >
+      
+      <Carousel.Item>
         <Link to="/announcements">
-          <img className="images zoom"  alt="" />
+        <Img src={"src/Imagenes/pulsera5.webp"} with="50px"/>
         </Link>
         <Carousel.Caption>
-          <h5>afaf</h5>
-          <p>afafa</p>
+          <h5>PULSERA HOMBRE</h5>
+          <p>₵10 000</p>
         </Carousel.Caption>
       </Carousel.Item>
+
+      <Carousel.Item>
+        <Link to="/announcements">
+        <Img src={"src/Imagenes/pulseras_locai.jpg"} with="50px"/>
+        </Link>
+        <Carousel.Caption>
+          <h5>PULSERA LOCAI</h5>
+          <p>₵10 000</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      
     </Carousel>
+    
   );
 };
 export default Carousel1;

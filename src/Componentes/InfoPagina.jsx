@@ -13,7 +13,7 @@ const InfoPagina = () => {
               </button>
             </h2>
             <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div className="accordion-body">dfghj</div>
+              <div className="accordion-body">Puedes comprar mediante nuestra pagina web o bien puedes visitarnos en Guachipelin , frente a la escuela Guachipelin</div>
 
             </div>
           </div>
@@ -37,12 +37,13 @@ const InfoPagina = () => {
               <li>Si compras ₡30 000, el envio sera gratis</li>
               </ul>
               TIENEN TIENDA FISICA?
-              <ul><li>No Encanto y Glamour es una tienda en linea</li></ul>
+              <ul><li>Si en Encanto y Glamour tenemos tanto tienda fisica como en linea= </li></ul>
               QUE FORMAS DE PAGO ACEPTAN?
               <ul><li>Vendemos unicamente de contado y los pedidos deben ser pagados en tu totalidad antes de ser enviados.</li>
               <li>Aceptamos las siguientes formas de pago: <br></br>
               Tendras que seleccionar una opcion durante el proceso de pago.</li>
               <li>Sinpe Movil</li>
+              <li>Efectivo</li>
               <li>Tarjeta de Credito o Debito</li>
               <li>Deposito Bancario</li>
               <li>Paypal</li>

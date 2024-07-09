@@ -8,6 +8,7 @@ function ContenedorCard({getPulceras,btnEliminar}) {
         <Card
          key={pul.id}   
          nombre={pul.nombre}
+         imagen={pul.imagen}
          precio={pul.precio}
          descripcion={pul.descripcion}
          material={pul.material}

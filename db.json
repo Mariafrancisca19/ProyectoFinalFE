@@ -34,6 +34,12 @@
       "usuario": "",
       "email": "",
       "clave": ""
+    },
+    {
+      "id": "02db",
+      "usuario": "FRANCISCA",
+      "email": "maria@gmail.com",
+      "clave": "1234"
     }
   ],
   "productos": []

@@ -22,6 +22,7 @@ const Home  = () => {
     },[])
     async function eliminar(id) {
       await eliminarProductos(id)
+      productos()
     }
 
   return (
