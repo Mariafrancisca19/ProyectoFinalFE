@@ -37,7 +37,7 @@ const guardarProductos = async(obj) => {
 }
 
 // metodo del put 
-const cambiarProductos= async (endpoint,id) => {
+const cambiarProductos= async (endpoint,id,obj) => {
     try {
       
       const respuesta = await fetch(`http://localhost:3001/${endpoint}/${id}`,{
@@ -45,7 +45,7 @@ const cambiarProductos= async (endpoint,id) => {
           headers:{
               "Content-type": "application; charset=UTF-8"
           },
-          body: JSON.stringify()
+          body: JSON.stringify(obj)
       })
       let datosF =await respuesta.json()
       console.log(datosF)
