@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
 import { obtenerProductos } from './MetodosProductos';
+import ContenedorCard from './ContenedorCard';
 
 
 // otra forma de hacer las rutas 
@@ -14,6 +15,7 @@ const MenuNav  =()=>{
   const[Info,setInfo]= useState([])
   const navigate = useNavigate()
   const [Busqueda,setBusqueda] = useState("")
+  const [data,setData]=useState([])
   function destacados() {
     navigate("")
   }
@@ -24,10 +26,13 @@ const MenuNav  =()=>{
     // para validadr que datos se 
     // RENDERIZAR EL DATO FILTRADO 
      console.log(Busqueda)
-    const productoFltrado = data.filter((vale)=>vale.nombre===Busqueda)
+    const productoFltrado = data.filter((obtener)=>obtener.nombre===Busqueda)
+    if(productoFltrado.length ===0){
+      alert("EL PRODUCTO NO EXISTE")
+      return
+    }
     console.log(productoFltrado)
-    // setData(data)
-
+    setData(productoFltrado)
   }
 
     return(
@@ -74,6 +79,11 @@ const MenuNav  =()=>{
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    {/* barra de busqueda echa a la cochino ,bueno mas rapido no hay tiempo*/}
+    {data &&
+    <ContenedorCard getPulceras={data}/>
+  }
+
         </>
     )
 }

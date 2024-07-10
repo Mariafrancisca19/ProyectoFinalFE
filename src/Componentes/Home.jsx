@@ -8,7 +8,6 @@ import ContenedorCard from './ContenedorCard';
 import Info from './Info';
 import InfoPagina from './InfoPagina';
 import FormularioEditar from './FormularioEditar';
-
 const Home  = () => {
   const [data, setData] = useState([])
   const [id,setID]=useState()
@@ -28,10 +27,10 @@ const Home  = () => {
     useEffect(()=>{
       productos()
     },[estado])
-
+    
      return (
     <div className='fondo'>
-    <MenuNav/>
+    <MenuNav data={data}/>
     
     <Carousel1/>
     <ContenedorCard  getPulceras={data}/>

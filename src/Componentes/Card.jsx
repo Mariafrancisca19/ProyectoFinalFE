@@ -15,7 +15,7 @@ function Card({imagen,nombre,precio,descripcion, material,btnEliminar,btnEditar,
       {mostrarBotones &&
     <>
       <button  className='btn btn-success ml-3' onClick={btnEliminar}>🗑️</button>
-      <button className='btn btn-success' onClick={btnEditar}>EDITAR</button>
+      <button className='btn btn-success btn-editar' onClick={btnEditar}>EDITAR</button>
       </>
     }
     </div>
