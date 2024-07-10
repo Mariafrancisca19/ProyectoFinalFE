@@ -1,6 +1,6 @@
 const Img = ({src})=>{
     return(
-        <img src={src}  style={{width:"20%"}}/> 
+        <img src={src}  style={{width:"25%"}}/> 
     )
 }
 export default Img

@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from './Card'
 
-function ContenedorCard({getPulceras,btnEliminar,btnEditar}) {
+function ContenedorCard({getPulceras,btnEliminar,btnEditar,mostrarBotones}) {
   return (
-    <div>
+    <div className='d-flex gap-3 mt-3'>
       {getPulceras.map(pul=>(
         <Card
          key={pul.id}   
@@ -14,7 +14,7 @@ function ContenedorCard({getPulceras,btnEliminar,btnEditar}) {
          material={pul.material}
          btnEliminar={()=>btnEliminar(pul.id)}
          btnEditar={()=> btnEditar(pul.id)}
-
+        mostrarBotones={mostrarBotones}
         />
       ))}
     </div>

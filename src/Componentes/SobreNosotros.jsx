@@ -3,7 +3,7 @@ import MenuNav from './MenuNav'
 
 const SobreNosotros = () => {
   return (
-    <div>
+    <div className='nosotros'>
        <MenuNav/>
       <h1>¿Quienes somos Encanto y glamour?</h1>
       <p>Una empresa Costarricense de emprendedores en dónde cada una de nuestras piezas es un testimonio de nuestra pasión por la creatividad y la belleza por la bisutería.<br/>

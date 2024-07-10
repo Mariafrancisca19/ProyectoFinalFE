@@ -34,7 +34,7 @@ const MenuNav  =()=>{
         <>
             <Navbar expand="lg" className="bg-body-tertiary" >
       <Container fluid>
-        <Navbar.Brand onClick={()=>{navigate("/home")}}>ENCANTO Y GLAMOUR</Navbar.Brand>
+        <Navbar.Brand onClick={()=>{navigate("/home")}} className=''>𝔼ℕℂ𝔸ℕ𝕋𝕆 𝕐 𝔾𝕃𝔸𝕄𝕆𝕌ℝ</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -42,21 +42,21 @@ const MenuNav  =()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link  onClick={()=>{navigate("/destacado")}}>ACCESORIO</Nav.Link>
+            <Nav.Link  onClick={()=>{navigate("/destacado")}}>𝔸ℂℂ𝔼𝕊𝕆ℝ𝕀𝕆𝕊</Nav.Link>
             {/* <Nav.Link onClick={()=>{navigate("/venderProductos")}}>PUBLICAR</Nav.Link> */}
             {/* <Nav.Link onClick={()=>{navigate("/sobreNosotros")}}>SOBRE NOSOTROS</Nav.Link> */}
-            <NavDropdown title="MENU" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3" onClick={()=>{navigate("/venderProductos")}}>VENTAS </NavDropdown.Item>
+            <NavDropdown title="𝕄𝔼ℕ𝕌" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3" onClick={()=>{navigate("/venderProductos")}}>ℙ𝕌𝔹𝕃𝕀ℂ𝔸ℝ </NavDropdown.Item>
               <NavDropdown.Item href="#action4"  onClick={()=>{navigate("/sobreNosotros")}}>
-                SOBRE NOSOTROS
+              𝕊𝕆𝔹ℝ𝔼 ℕ𝕆𝕊𝕆𝕋ℝ𝕆𝕊
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                CERRAR SESION
+              ℂ𝔼ℝℝ𝔸ℝ 𝕊𝔼𝕊𝕀𝕆ℕ
               </NavDropdown.Item>
             </NavDropdown>
             
-            <Nav.Link>CERRAR SESION</Nav.Link>
+            <Nav.Link>ℂ𝔼ℝℝ𝔸ℝ 𝕊𝔼𝕊𝕀𝕆ℕ</Nav.Link>
 
           </Nav>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">
@@ -65,11 +65,11 @@ const MenuNav  =()=>{
           <Form className="d-flex">
             <Form.Control
               type="search" onChange={(e) => { setBusqueda(e.target.value) }}
-              placeholder="Search"
+              placeholder="𝕊𝔼𝔸ℝℂℍ"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success" onClick={productos}>BUSCAR</Button>
+            <Button variant="outline-success" onClick={productos}>𝔹𝕌𝕊ℂ𝔸ℝ</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

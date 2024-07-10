@@ -66,9 +66,9 @@ const IncioSesion = ({ text }) => {
 
   return (
     <div className="inicio">
-      <h1>Welcome</h1>
-      <input placeholder="Correo Electrronico" type="correo" ref={correoR}/>
-      <input placeholder="Contrasena" type="password" ref={claveR}/>
+      <h1 className="welcome">░W░E░L░C░O░M░E░</h1>
+      <input className="inputB" placeholder="Correo Electrronico" type="correo" ref={correoR}/>
+      <input className="inputB" placeholder="Contrasena" type="password" ref={claveR}/>
       <button onClick={()=>{
         if(validando()){
           login()

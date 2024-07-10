@@ -13,6 +13,8 @@ const Home  = () => {
   const [data, setData] = useState([])
   const [id,setID]=useState()
   const [estado,setEstado]=useState(false)
+
+  // METODO DEL GET
   async function productos() {
     const data = await obtenerProductos()
     console.log(data)
@@ -27,28 +29,18 @@ const Home  = () => {
       productos()
     },[estado])
 
-    async function eliminar(id) {
-      await eliminarProductos(id)
-      productos()
-    }
-    // funcion para editar los productos "id del put"
-    async function editar(id) {  
-      setID(id)
-      console.log(id);
-    }
-
-  return (
-    <>
+     return (
+    <div className='fondo'>
     <MenuNav/>
     
     <Carousel1/>
-    <ContenedorCard btnEditar={editar}  btnEliminar={eliminar} getPulceras={data}/>
+    <ContenedorCard  getPulceras={data}/>
     {id && 
     <FormularioEditar id={id} recargaPag={recargaPag}/>
     }
     <Info/>
     <InfoPagina/>
-</>
+</div>
   );
 }
 
