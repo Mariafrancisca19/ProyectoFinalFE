@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -5,16 +6,33 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
+import { obtenerProductos } from './MetodosProductos';
+
 
 // otra forma de hacer las rutas 
 const MenuNav  =()=>{
+  const[Info,setInfo]= useState([])
   const navigate = useNavigate()
+  const [Busqueda,setBusqueda] = useState("")
   function destacados() {
     navigate("")
   }
+// get
+  async function productos() {
+    const data = await obtenerProductos()
+    // realizar validacion con una condicional .filter
+    // para validadr que datos se 
+    // RENDERIZAR EL DATO FILTRADO 
+     console.log(Busqueda)
+    const productoFltrado = data.filter((vale)=>vale.nombre===Busqueda)
+    console.log(productoFltrado)
+    // setData(data)
+
+  }
+
     return(
         <>
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar expand="lg" className="bg-body-tertiary" >
       <Container fluid>
         <Navbar.Brand onClick={()=>{navigate("/home")}}>ENCANTO Y GLAMOUR</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -25,11 +43,11 @@ const MenuNav  =()=>{
             navbarScroll
           >
             <Nav.Link  onClick={()=>{navigate("/destacado")}}>ACCESORIO</Nav.Link>
-            <Nav.Link onClick={()=>{navigate("/venderProductos")}}>PUBLICAR</Nav.Link>
-            <Nav.Link onClick={()=>{navigate("/sobreNosotros")}}>SOBRE NOSOTROS</Nav.Link>
+            {/* <Nav.Link onClick={()=>{navigate("/venderProductos")}}>PUBLICAR</Nav.Link> */}
+            {/* <Nav.Link onClick={()=>{navigate("/sobreNosotros")}}>SOBRE NOSOTROS</Nav.Link> */}
             <NavDropdown title="MENU" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">VENTAS </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="#action3" onClick={()=>{navigate("/venderProductos")}}>VENTAS </NavDropdown.Item>
+              <NavDropdown.Item href="#action4"  onClick={()=>{navigate("/sobreNosotros")}}>
                 SOBRE NOSOTROS
               </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -46,12 +64,12 @@ const MenuNav  =()=>{
           </svg> 
           <Form className="d-flex">
             <Form.Control
-              type="search"
+              type="search" onChange={(e) => { setBusqueda(e.target.value) }}
               placeholder="Search"
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">BUSCAR</Button>
+            <Button variant="outline-success" onClick={productos}>BUSCAR</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

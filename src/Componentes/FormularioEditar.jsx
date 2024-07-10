@@ -12,6 +12,7 @@ const FormularioEditar = ({id,recargaPag}) => {
     const datos = {
       nombre: nombre,
       precio: precio,
+      material:material
     }
     await cambiarProductos("productos", id, datos)
     recargaPag()
