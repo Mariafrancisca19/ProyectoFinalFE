@@ -38,7 +38,7 @@ const Home  = () => {
     <FormularioEditar id={id} recargaPag={recargaPag}/>
     }
     <Info/>
-    <InfoPagina/>
+
 </div>
   );
 }

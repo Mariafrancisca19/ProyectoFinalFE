@@ -2,8 +2,8 @@ import React from 'react'
 
 const InfoPagina = () => {
   return (
-    <div style={{ width: "600px", border: "3.5px solid #000" }}>
-      <h1 className='text-center'>INFORMACIÒN</h1>
+    <div className= "bg-white" id='info' style={{width: "800px" }}>
+      <h1 className='text-center' >INFORMACIÒN</h1>
       <div>
         <div className="accordion accordion-flush" id="accordionFlushExample">
           <div className="accordion-item">

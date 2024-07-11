@@ -13,13 +13,12 @@
 
 .fondo{
 
-    background-color: #eec4c4;
+    background-color:#fffafa;
 
 
-    background-image: url(/src/Imagenes/fondoF.jpg);
+    background-image: url(/src/Imagenes/fondotextura.jpg);
     background-repeat: no-repeat;
-    background-size: cover ;         /*estilo de fondo*/
-background-repeat: no-repeat;
+    background-size: 100% 100%;        /*estilo de fondo*/
 
 box-shadow: none;
 align-items: center;
@@ -73,3 +72,8 @@ h5{
     margin-left: 10px;
 }
 
+.contacto{
+
+
+
+}

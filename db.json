@@ -46,6 +46,18 @@
       "usuario": "asdf",
       "email": "asdf",
       "clave": "asdf"
+    },
+    {
+      "id": "61e6",
+      "usuario": "MARIA",
+      "email": "maria@gmail.com",
+      "clave": "1907"
+    },
+    {
+      "id": "7895",
+      "usuario": "dfghjk",
+      "email": "asdf",
+      "clave": "asdf"
     }
   ],
   "productos": [
