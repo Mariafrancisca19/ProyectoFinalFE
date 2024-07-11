@@ -67,6 +67,7 @@ const IncioSesion = ({ text }) => {
   return (
     <div className="inicio">
       <h1 className="welcome">░W░E░L░C░O░M░E░</h1>
+      <div className="inic">
       <input className="inputB" placeholder="Correo Electrronico" type="correo" ref={correoR}/>
       <input className="inputB" placeholder="Contrasena" type="password" ref={claveR}/>
       <button onClick={()=>{
@@ -78,9 +79,10 @@ const IncioSesion = ({ text }) => {
         }
          
       
-      }}>INICIAR</button>
-      <a  onClick={()=>{navigate("/Registrarse")}}>NO TENGO CUENTA</a>
-      <a  onClick={()=>{navigate("/Home")}}>Home</a>
+      }}>INICIAR</button></div>
+      <div className="butones">
+      <a className="cuenta" onClick={()=>{navigate("/Registrarse")}}>NO TENGO CUENTA</a>
+      <a className="casa" onClick={()=>{navigate("/Home")}}>Home</a></div>
     </div>
   )
 

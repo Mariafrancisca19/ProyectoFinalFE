@@ -58,6 +58,12 @@
       "usuario": "dfghjk",
       "email": "asdf",
       "clave": "asdf"
+    },
+    {
+      "id": "dc59",
+      "usuario": "",
+      "email": "",
+      "clave": ""
     }
   ],
   "productos": [
