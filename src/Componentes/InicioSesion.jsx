@@ -65,7 +65,7 @@ const IncioSesion = ({ text }) => {
   }
 
   return (
-    <div className="inicio">
+    <div className="">
       <h1 className="welcome">░W░E░L░C░O░M░E░</h1>
       <div className="inic">
       <input className="inputB" placeholder="Correo Electrronico" type="correo" ref={correoR}/>
@@ -77,12 +77,11 @@ const IncioSesion = ({ text }) => {
           // mostrarAlerta("exito", "te has registradocon exito")
           //MANDA A OTRA PAGINA
         }
-         
       
       }}>INICIAR</button></div>
-      <div className="butones">
-      <a className="cuenta" onClick={()=>{navigate("/Registrarse")}}>NO TENGO CUENTA</a>
-      <a className="casa" onClick={()=>{navigate("/Home")}}>Home</a></div>
+      <div className="text-center d-flex gap-3 mx-auto justify-content-center">
+      <a className="text-decoration-none text-black" onClick={()=>{navigate("/Registrarse")}}>NO TENGO CUENTA</a>
+      <a className="text-decoration-none text-black" onClick={()=>{navigate("/Home")}}>Home</a></div>
     </div>
   )
 

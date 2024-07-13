@@ -61,7 +61,7 @@ const MenuNav  =()=>{
               </NavDropdown.Item>
             </NavDropdown>
             
-            <Nav.Link>ℂ𝔼ℝℝ𝔸ℝ 𝕊𝔼𝕊𝕀𝕆ℕ</Nav.Link>
+            <Nav.Link onClick={()=>navigate("/")}>ℂ𝔼ℝℝ𝔸ℝ 𝕊𝔼𝕊𝕀𝕆ℕ</Nav.Link>
 
           </Nav>
           <Form className="d-flex">

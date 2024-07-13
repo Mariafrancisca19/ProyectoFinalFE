@@ -52,14 +52,14 @@ const Registrarse = ({ }) => {
 
     return (
         <>
-        <div className="btnRegistar">
+        <div  className="d-flex gap-3 mx-auto justify-content-center flex-column w-25 centro">
             <input value={nombre} onChange={(e)=>{setNombre(e.target.value)}} placeholder="Nombre Completo" type="text"/>
             <input value={correo} onChange={(e)=>{setCorreo(e.target.value)}} placeholder="Correo Electrronico" type="correo"/>
             <input value={clave} onChange={(e)=>{setClave(e.target.value)}} placeholder="Contrasena" type="password"/>
             <button onClick={llamarDatos}>REGISTRARME</button>
             {/* <a  onClick={()=>{navigate("/InicioSesion")}}>DEVOLVERSE DE PAGINA</a>
             <a href="./InicioSesion.jsx"/> */}
-            <button><Link to="/InicioSesion" >Devolverse de pagina</Link></button>
+            <button ><Link className="text-decoration-none text-black" to="/InicioSesion" >Devolverse de pagina</Link></button>
 
         </div>
         </>

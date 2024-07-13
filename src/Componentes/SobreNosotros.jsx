@@ -3,7 +3,7 @@ import MenuNav from './MenuNav'
 
 const SobreNosotros = () => {
   return (
-    <div className="sobre" style={{backgroundColor:"#ffdab9", width:"50vw "}}>
+    <div className="sobre" style={{backgroundColor:"#ffdab9", width:"100vw "}}>
        <MenuNav/>
       <h1>¿Quienes somos Encanto y glamour?</h1>
       <p><ul>
